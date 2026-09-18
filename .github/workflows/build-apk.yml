@@ -16,8 +16,9 @@ jobs:
 
       - name: Extract Android project
         run: |
+          rm -rf buildsrc
           mkdir -p buildsrc
-          unzip -q sileya-printer-bridge-v2-cloud-build-fixed.zip -d buildsrc
+          unzip -q sileya-printer-bridge-v4-rpp02n-stable.zip -d buildsrc
 
           echo "=== Isi hasil extract ==="
           find buildsrc -maxdepth 3 -type f | head -100
